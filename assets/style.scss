@@ -1,0 +1,194 @@
+@import "icon.css";
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+//Colors
+$LuckyP:#fd4350;
+$bcWhite: #f6f6f6;
+$bgWhite:#ffffff;
+$black:#494949;
+$fblack:#777777;
+// Styles
+
+.bc-White {
+    background-color: $bcWhite;
+}
+
+.bg-White {
+    background-color: $bgWhite;
+}
+
+.bg-hotstone {
+    background-color: $LuckyP;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.txt {
+    font-weight: 400;
+
+    &-lit {
+        font-weight: 300;
+    }
+
+    &-sBold {
+        font-weight: 600;
+    }
+
+    &-rBold {
+        font-weight: 700;
+    }
+
+    &-eBold {
+        font-weight: 800;
+    }
+
+}
+
+input {
+
+    &:focus,
+    &:active,
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    &::-webkit-input-placeholder {
+        box-shadow: none;
+        transition: color 0.3s !important;
+    }
+
+    &:focus::-webkit-input-placeholder {
+        color: transparent !important;
+        box-shadow: none;
+    }
+}
+
+a {
+    &.on {
+        &-white {
+            color: $LuckyP
+        }
+
+        &-color {
+            color: $black;
+
+            &-w {
+                color: $bgWhite;
+            }
+        }
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+}
+
+.on {
+    &-white {
+        color: $black;
+    }
+
+    &-color {
+        color: $bgWhite;
+
+        &-w {
+            color: $bgWhite;
+        }
+    }
+}
+
+
+.full-tall {
+    height: 100vh;
+}
+
+.decor {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    .textLogo {
+        x: 1em;
+        y: 1em;
+    }
+}
+
+.pill {
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+}
+
+input {
+    border-radius: 0;
+}
+
+.mCont {
+
+    position: relative;
+    z-index: 1;
+    border-radius: 1em;
+    overflow: hidden;
+
+    &:after,
+    &:before {
+        top: 0px;
+        content: "";
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+    }
+
+    &::before {
+
+        left: 0px;
+        background-color: $LuckyP;
+    }
+
+    &::after {
+        right: 0;
+    }
+}
+
+.itprix {
+    font-family: 'Fugaz One', cursive;
+}
+
+.ffoot {
+    font-size: 0.7rem;
+}
+
+.login {
+    border-radius: 1em;
+
+    .input-group {
+        border: 0;
+        border-bottom: 1px solid $fblack;
+        color: $fblack;
+
+        &-text {
+            border-radius: 0;
+            border: unset;
+            background-color: unset;
+            color: inherit;
+        }
+
+        input {
+            font-family: 'Open Sans', sans-serif;
+            border: unset;
+            box-shadow: none;
+            background-color: -internal-light-dark(rgb(255, 255, 255, 0), rgba(0, 0, 0, 0.4)) !important;
+            color: -internal-light-dark(black, white) !important;
+
+        }
+    }
+}
