@@ -15,12 +15,12 @@
 </head>
 
 <body class="bg-lucky text-white">
-    <svg class="decor" xmlns="http://www.w3.org/2000/svg">
-        <text class="textLogo" fill="red" x="2" y="2">ITPrix</text>
-    </svg>
+    <div class="decor">
+        <p class="textLogo">Login</p>
+    </div>
     <div class="container">
         <div class="row full-tall justify-content-center align-items-center">
-            <div class="bc-hotstone col-12 p-4 mCont shadow-lg">
+            <div class="bc-hotstone col-12 p-4 mCont bg-White shadow-lg sup">
                 <div class="row fhead">
                     <div class="col-6">
                         <picture>
@@ -35,29 +35,41 @@
                         <p><small>You can use the mark tag to highlight text.</small></p>
                     </div>
                     <div class="col-4">
-                        <form class="bg-White shadow p-4 py-5 login">
-                            <div class="form-group">
+                        <form class="bg-White login pb-2 pt-4 px-5 shadow">
+                            <p class="on-white text-center text-uppercase form-title"><span class="changeText">Sign Up</span></p>
+                            <div class="form-group mb-4 hide-l hide-r">
                                 <div class="input-group">
-                                    <input type="email" class="form-control rounded-0" aria-describedby="emailHelp">
+                                    <input type="text" class="form-control rounded-0 pl-0" aria-describedby="namelHelp" placeholder="Name">
                                     <div class="input-group-append">
-                                        <span class="input-group-text"><i class="icon-mail_outline"></i></span>
+                                        <span class="input-group-text pr-0"><i class="icon-person_outline"></i></span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                            <div class="input-group">
-                                <input type="password" class="form-control rounded-0">
-                                <div class="input-group-append">
-                                    <span class="input-group-text"><i class="icon-lock_outline"></i></span>
+                            <div class="form-group mb-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control rounded-0 pl-0" aria-describedby="emailHelp" placeholder="Email">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text pr-0"><i class="icon-mail_outline"></i></span>
+                                    </div>
                                 </div>
-                            </div>  
-                               
                             </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input rounded-0">
+                            <div class="form-group mb-4 hide-r">
+                                <div class="input-group">
+                                    <input type="password" class="form-control rounded-0 pl-0" placeholder="Password">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text pr-0"><i class="icon-lock_outline"></i></span>
+                                    </div>
+                                </div>                                 
+                            </div>
+                            <div class="mb-4 align-items-center d-flex form-check form-group justify-content-start hide-r hide-s">
+                                <input type="checkbox" class="form-check-input mr-1 mt-0 rounded-0">
                                 <label class="on-white form-check-label" for="">Remember me</label>
                             </div>
-                            <button type="submit" class="w-100 pill btn bg-hotstone on-color-w">Submit</button>
+                            <button type="submit" class=" mb-5 w-100 pill btn bg-hotstone on-color-w">Submit</button>
+                            <div class="form-group">
+                                <p class="on-white text-center hide-l hide-r" ><small>Already have an account? <a href="/signup.html" class="on-white" target="_blank" rel="noopener noreferrer">Sign In</a></small></p>
+                                <p class="on-white text-center hide-s" ><small>Register a new account. <a href="/signup.html" class="on-white" target="_blank" rel="noopener noreferrer">Sign Up</a></small></p>
+                            </div>
                         </form>
                     </div>
                     <div class="col-4">design</div>
@@ -80,6 +92,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="/assets/app.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,8 @@ $LuckyP:#fd4350;
 $bcWhite: #f6f6f6;
 $bgWhite:#ffffff;
 $black:#494949;
-$fblack:#777777;
+$fblack:#a1a1a1;
+$lblack:#d1d1d1;
 // Styles
 
 .bc-White {
@@ -22,6 +23,7 @@ $fblack:#777777;
 }
 
 body {
+    color: $black;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -53,7 +55,7 @@ input {
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus {
-        -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+        -webkit-box-shadow: 0 0 0px 1000px #0000 inset;
         transition: background-color 5000s ease-in-out 0s;
     }
 
@@ -66,6 +68,11 @@ input {
         color: transparent !important;
         box-shadow: none;
     }
+
+    &[type="checkbox"]:checked {
+        color: $LuckyP;
+    }
+
 }
 
 a {
@@ -106,17 +113,34 @@ a {
 
 .full-tall {
     height: 100vh;
+
+    &::after {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        color: $LuckyP;
+        text-align: center;
+        font-size: 10em;
+        font-family: 'Fugaz One', cursive;
+    }
 }
 
 .decor {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fugaz One', cursive;
     width: 100vw;
     height: 100vh;
     position: absolute;
 
     .textLogo {
-        x: 1em;
-        y: 1em;
+        color: $bgWhite;
+        font-size: 25vw;
+        line-height: 1;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        text-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+        ;
     }
 }
 
@@ -131,12 +155,38 @@ input {
     border-radius: 0;
 }
 
+.form {
+    &-title {
+        font-size: 1.4em;
+        font-weight: 400;
+        color: $black;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.4em;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            background-color: $LuckyP;
+            width: 1em;
+            height: 2px;
+        }
+    }
+}
+
+
 .mCont {
 
     position: relative;
     z-index: 1;
-    border-radius: 1em;
+    border-radius: 1.5em;
     overflow: hidden;
+    font-size: 0.8rem;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    transition: height 0.5s;
 
     &:after,
     &:before {
@@ -157,38 +207,68 @@ input {
     &::after {
         right: 0;
     }
+
+    .login {
+        border-radius: 1.5em;
+
+        .input-group {
+            border: 0;
+            border-bottom: 1px solid $lblack;
+            color: $fblack;
+
+            &-text {
+                border-radius: 0;
+                border: unset;
+                background-color: unset;
+                color: inherit;
+            }
+
+            input {
+                font-size: 1.1em;
+                border: unset;
+                box-shadow: none;
+                background-color: -internal-light-dark(rgb(255, 255, 255, 0), rgba(0, 0, 0, 0.4)) !important;
+                color: -internal-light-dark(black, white) !important;
+
+            }
+        }
+    }
+
+    .ffoot {
+        font-size: 0.7rem;
+    }
 }
 
 .itprix {
     font-family: 'Fugaz One', cursive;
 }
 
-.ffoot {
-    font-size: 0.7rem;
+
+// Text changing Animation. Not  Important
+
+.sup {
+    .hide {
+
+        &-s {
+            display: none !important;
+        }
+    }
 }
 
-.login {
-    border-radius: 1em;
+.lgin {
+    .hide {
 
-    .input-group {
-        border: 0;
-        border-bottom: 1px solid $fblack;
-        color: $fblack;
-
-        &-text {
-            border-radius: 0;
-            border: unset;
-            background-color: unset;
-            color: inherit;
+        &-l {
+            display: none !important;
         }
+    }
+}
 
-        input {
-            font-family: 'Open Sans', sans-serif;
-            border: unset;
-            box-shadow: none;
-            background-color: -internal-light-dark(rgb(255, 255, 255, 0), rgba(0, 0, 0, 0.4)) !important;
-            color: -internal-light-dark(black, white) !important;
+.rcvr {
+    .hide {
 
+        &-r {
+            display: none !important;
         }
     }
 }
