@@ -249,7 +249,7 @@ input {
 }
 
 
-// Text changing Animation. Not  Important
+// >> Text changing Animation. Not  Important
 
 .sup {
     .hide {
@@ -277,7 +277,10 @@ input {
         }
     }
 }
-
+.smooth{
+    transition: all 0.3s;
+}
+// << Text changing Animation. Not  Important
 
 @media (max-width: 575.98px) {
     .mCont {

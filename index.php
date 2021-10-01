@@ -20,7 +20,7 @@
     </div>
     <div class="container">
         <div class="row full-tall justify-content-center align-items-center">
-            <div class="bc-hotstone col-11 p-4 mCont bg-White shadow-lg sup">
+            <div class="bc-hotstone col-11 p-4 mCont bg-White shadow-lg sup ">
                 <div class="fhead justify-content-center justify-content-sm-start row">
                     <div class="col-6 col-sm-4">
                         <picture>
