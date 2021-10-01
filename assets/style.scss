@@ -14,13 +14,17 @@ $lblack:#d1d1d1;
     background-color: $bcWhite;
 }
 
-.bg-White {
-    background-color: $bgWhite;
+.bg {
+    &-White {
+        background-color: $bgWhite;
+    }
+
+    &-hotstone {
+        background-color: $LuckyP;
+    }
 }
 
-.bg-hotstone {
-    background-color: $LuckyP;
-}
+
 
 body {
     color: $black;
@@ -55,6 +59,7 @@ input {
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus {
+        box-shadow: 0 0 0px 1000px #0000 inset;
         -webkit-box-shadow: 0 0 0px 1000px #0000 inset;
         transition: background-color 5000s ease-in-out 0s;
     }
@@ -133,7 +138,7 @@ a {
 
     .textLogo {
         color: $bgWhite;
-        font-size: 25vw;
+        font-size: 20vw;
         line-height: 1;
         top: 0;
         padding: 0;
@@ -269,6 +274,116 @@ input {
 
         &-r {
             display: none !important;
+        }
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .mCont {
+        &::before {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .w {
+        &-sm {
+            &-25 {
+                width: 25% !important;
+            }
+
+            &-50 {
+                width: 50% !important;
+            }
+
+            &-75 {
+                width: 75% !important;
+            }
+
+            &-100 {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .w {
+
+        &-md {
+            &-25 {
+                width: 25% !important;
+            }
+
+            &-50 {
+                width: 50% !important;
+            }
+
+            &-75 {
+                width: 75% !important;
+            }
+
+            &-100 {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .mCont {
+
+        &::after,
+        &::before {
+            height: 100%;
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .w {
+
+        &-lg {
+            &-25 {
+                width: 25% !important;
+            }
+
+            &-50 {
+                width: 50% !important;
+            }
+
+            &-75 {
+                width: 75% !important;
+            }
+
+            &-100 {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .w {
+
+        &-xl {
+            &-25 {
+                width: 25% !important;
+            }
+
+            &-50 {
+                width: 50% !important;
+            }
+
+            &-75 {
+                width: 75% !important;
+            }
+
+            &-100 {
+                width: 100% !important;
+            }
         }
     }
 }

@@ -16,27 +16,29 @@
 
 <body class="bg-lucky text-white">
     <div class="decor">
-        <p class="textLogo">Login</p>
+        <p class="changeText pt-3 pt-md-5 pt-sm-4 text-uppercase textLogo">Sign Up</p>
     </div>
     <div class="container">
         <div class="row full-tall justify-content-center align-items-center">
-            <div class="bc-hotstone col-12 p-4 mCont bg-White shadow-lg sup">
-                <div class="row fhead">
-                    <div class="col-6">
+            <div class="bc-hotstone col-11 p-4 mCont bg-White shadow-lg sup">
+                <div class="fhead justify-content-center justify-content-sm-start row">
+                    <div class="col-6 col-sm-4">
                         <picture>
-                            <img src="assets/itPrix-01-01.svg" alt="" class="w-25">
+                            <img src="assets/itPrix-01-01.svg" alt="" class="w-md-50 w-lg-25 w-xs-100">
                         </picture>
                     </div>
-                    <div class="col-6">hem</div>
+                    <div class="col-6 d-none">hem</div>
                 </div>
-                <div class="align-items-center fbody justify-content-between my-5 row">
-                    <div class="col-4">
+                <div class="align-items-md-center align-items-start fbody flex-column flex-md-row justify-content-center justify-content-md-between my-4 my-md-5 row">
+                    <div class="col-lg-4 col-md-6 col-12 text-center">
                         <h2 class="h4 txt-rBold disabled">Welcome to ITPrix!</h2>
                         <p><small>You can use the mark tag to highlight text.</small></p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-6 col-lg-4 col-12">
                         <form class="bg-White login pb-2 pt-4 px-5 shadow">
-                            <p class="on-white text-center text-uppercase form-title"><span class="changeText">Sign Up</span></p>
+                            <p class="on-white text-center text-uppercase form-title">
+                                <span class="changeText">Sign Up</span>
+                            </p>
                             <div class="form-group mb-4 hide-l hide-r">
                                 <div class="input-group">
                                     <input type="text" class="form-control rounded-0 pl-0" aria-describedby="namelHelp" placeholder="Name">
@@ -72,7 +74,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-4">design</div>
+                    <div class="col-md-4 col-12 d-none d-md-block">design</div>
                 </div>
                 <div class="row ffoot">
                     <div class="col-6 on-color"><a href="#" class="on-color-w icon-arrow_back_ios text-uppercase txt-sBold" target="_blank" rel="noopener noreferrer">Home</a></div>

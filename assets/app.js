@@ -3,9 +3,10 @@
 var text = ["Login", "Recover","Sign Up"];
 var cls = ["lgin", "rcvr", "sup"]
 var c = 0;
-var textel = document.querySelector(".changeText");
-
+var textel = document.querySelectorAll(".changeText");
 setInterval(change, 3500);
+
+
 function change() {
     var inpx = document.querySelector(".mCont");
     switch (c) {
@@ -28,9 +29,10 @@ function change() {
             break;
     }
 
-    
-        textel.innerHTML = text[c];
-        textel.classList.remove('hide');       
+    textel.forEach(e => {
+        e.innerHTML = text[c];
+        });
+           
         c++;
         if (c >= text.length) {
             c = 0;
